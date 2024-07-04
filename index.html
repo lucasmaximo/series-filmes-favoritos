@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Filmes e séries favoritos</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho__titulo">
+            <a onclick='limparFiltro()' href="#">FILMES E SÉRIES FAVORITOS</a>
+        </div>
+        <div class="cabecalho__menu">
+            <p><a onclick="filtrar('filme')" href="#">FILMES</a></p>
+            <p><a onclick="filtrar('serie')" href="#">SÉRIES</a></p>
+        </div>
+    </header>
+    <main class="corpo" >
+        <section class="corpo__filmesseries">
+            <img onclick="ampliarImagem(this)" class="filme" src="./assets/images/avatar.png" alt="Filme Avatar">
+            <img onclick="ampliarImagem(this)" class="serie" src="./assets/images/breaking-bad.png" alt="Serie Breaking Bad">
+            <img onclick="ampliarImagem(this)" class="serie" src="./assets/images/dr-house.png" alt="Serie Dr House">
+            <img onclick="ampliarImagem(this)" class="filme" src="./assets/images/ironman-1.png" alt="Filme Ironman 1">
+            <img onclick="ampliarImagem(this)" class="filme" src="./assets/images/ironman-2.png" alt="Filme Homem de Ferro 2">
+            <img onclick="ampliarImagem(this)" class="filme" src="./assets/images/avengers-1.png" alt="Filme Os Vingadores">
+            <img onclick="ampliarImagem(this)" class="filme" src="./assets/images/titanic.png" alt="Filme Titanic">
+            <img onclick="ampliarImagem(this)" class="serie" src="./assets/images/the-walking-dead.png" alt="Série The Walking Dead">
+            <img onclick="ampliarImagem(this)" class="serie" src="./assets/images/game-of-thrones.png" alt="Série Game of Thrones">
+            <img onclick="ampliarImagem(this)" class="serie" src="./assets/images/supernatural.png" alt="Série Sobrenatural">
+            <img onclick="ampliarImagem(this)" class="serie" src="./assets/images/shernobyl.png" alt="Série Shernobyl">
+            <img onclick="ampliarImagem(this)" class="filme" src="./assets/images/avatar-2.png" alt="Filme Avatar 2">
+            <img onclick="ampliarImagem(this)" class="filme" src="./assets/images/dr-strange.png" alt="Filme Doutor Estranho">
+            <img onclick="ampliarImagem(this)" class="filme" src="./assets/images/infinity-war.png" alt="Filme Vingadores Guerra Infinita">
+            <img onclick="ampliarImagem(this)" class="filme" src="./assets/images/ultimato.png" alt="Filme Vingadores Ultimato">
+        </section>
+    </main>
+    <script src="./scripts/app.js" defer></script>
+</body>
+
+ <!-- Modal para exibir a imagem ampliada -->
+ <div id="myModal" class="modal">
+    <span class="close" onclick="fecharModal()">&times;</span>
+    <img class="modal-content" id="img01">
+</div>
+</html>
